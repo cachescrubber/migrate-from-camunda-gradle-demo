@@ -20,6 +20,10 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+  runtimeOnly "com.h2database:h2"
+  implementation "org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp:7.23.0"
+  implementation "org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-rest:7.23.0"
+  implementation "org.camunda.bpm.extension:camunda-platform-7-keycloak:7.23.0"
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
